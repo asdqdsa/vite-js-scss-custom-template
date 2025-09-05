@@ -1,0 +1,20 @@
+@use '../shared/vars' as *;
+@use '../shared/mixins' as *;
+
+html {
+  height: 100%;
+  width: 100%;
+  min-height: 1080px;
+}
+
+body {
+  background-color: $color-border;
+  background-image: $gradient-brand;
+  color: $text-on-dark;
+}
+
+#app {
+  @include flex();
+  justify-content: center;
+  align-items: center;
+}
