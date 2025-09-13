@@ -26,3 +26,9 @@ dist-ssr
 # Cache
 .eslintcache
 .stylelintcache
+
+# Spec
+*spec.*
+
+# System
+.fuse_hidden*
