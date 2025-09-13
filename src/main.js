@@ -1,4 +1,4 @@
-import App from './app/App';
-import './global.scss';
+import '@/global.scss';
+import App from '@/app';
 
 document.getElementById('root').appendChild(App());
