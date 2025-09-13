@@ -12,6 +12,9 @@ const _config = {
   },
 
   root: './',
+  srcPath: 'src',
+
+  legacyTargets: ['defaults', 'not IE 11'],
 };
 
 export default _config;
