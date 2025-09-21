@@ -72,6 +72,9 @@ importers:
       stylelint-config-standard:
         specifier: ^39.0.0
         version: 39.0.0(stylelint@16.23.1)
+      stylelint-scss:
+        specifier: ^6.12.1
+        version: 6.12.1(stylelint@16.23.1)
       terser:
         specifier: ^5.44.0
         version: 5.44.0
