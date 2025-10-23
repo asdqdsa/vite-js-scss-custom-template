@@ -3,7 +3,7 @@ import { loadState, saveState } from '@/shared/storage';
 import { LOCAL_STORAGE_KEY_THEMES } from './constants';
 /**
  * @typedef {Object} ThemeState
- * @property {'dark' | 'light' | 'gold' | null} activeTheme
+ * @property {'default' | 'dark' | 'light' | 'gold' | null} activeTheme
  * @property {boolean} [isFirstLoad]
  */
 
