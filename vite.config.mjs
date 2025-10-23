@@ -31,6 +31,22 @@ export default defineConfig({
   build: {
     sourcemap: true,
     minify: false,
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, _config.root, 'index.html'),
+        atomic: resolve(
+          __dirname,
+          _config.srcPath,
+          'shared/uikit/atomic/bundle.js'
+        ),
+      },
+      output: {
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name?.includes('atomic')) return 'assets/atomic.css';
+          return 'assets/[name]-[hash][extname]';
+        },
+      },
+    },
   },
   resolve: {
     alias: {
