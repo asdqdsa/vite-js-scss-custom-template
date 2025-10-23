@@ -32,3 +32,6 @@ dist-ssr
 
 # System
 .fuse_hidden*
+
+# Env
+.env
