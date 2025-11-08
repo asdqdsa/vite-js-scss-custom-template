@@ -12,7 +12,7 @@ A custom **Vite** + **JS** + **SASS** starter template that loosely follows FSD 
 
 The `shared` layer inludes (`uikit`, `utils`, `storage`):
 
-- Modular SCSS architecture [**components**]@
+- Modular SCSS architecture [**components**]
 - Draft typography tokens and theme colors [**theme**]
 - Reusable mixins and helper utilities [**core**]
 - Atomic styles (Tailwind-like) [**atomic**]
@@ -31,3 +31,5 @@ pnpm prev # port:5555
 > [!NOTE]
 > This template uses environment variables.
 > Don't forget to remove the `.example` part from the provided `.env` files.
+
+**Version:** 0.5.0 - stable first draft
