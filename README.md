@@ -25,7 +25,7 @@ The `shared` layer inludes (`uikit`, `utils`, `storage`):
 pnpm i # install
 pnpm dev # port:4444
 pnpm build # dist
-pnpm preview # port:5555
+pnpm prev # port:5555
 ```
 
 > [!NOTE]
