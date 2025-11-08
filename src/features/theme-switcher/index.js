@@ -1,20 +1,22 @@
-import { loadThemeState, updateThemeState } from './state';
+import { createElement } from '@/shared/dom/create-element';
 
-function nextThemeSwitcher({ themeList, currentTheme }) {
-  return themeList[(themeList.indexOf(currentTheme) + 1) % themeList.length];
-}
+import { loadThemeState } from './state';
 
-export function initThemeSwitcher({ root, node, themeList }) {
-  const { activeTheme } = loadThemeState();
-  root.dataset.theme = activeTheme;
+export function ThemeButton({ events }) {
+  let { activeTheme } = loadThemeState();
 
-  node.addEventListener('click', () => {
-    const { activeTheme } = loadThemeState();
-    const next = nextThemeSwitcher({
-      themeList,
-      currentTheme: activeTheme,
-    });
-    root.dataset.theme = next;
-    updateThemeState({ activeTheme: next });
+  events.on('theme:changed', ({ detail }) => {
+    el.textContent = `${detail}`;
   });
+
+  const el = createElement(
+    'button',
+    {
+      className: 'btn',
+      onClick: () => events.emit('theme:next'),
+    },
+    `${activeTheme}`
+  );
+
+  return el;
 }

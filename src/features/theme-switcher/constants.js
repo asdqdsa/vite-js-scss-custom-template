@@ -1,7 +1,8 @@
 export const THEMES = [
-  'default',
+  'daft',
   // 'dark',
-  'light',
-  'gold',
+  // 'light',
+  // 'gold',
+  'dash',
 ];
-export const LOCAL_STORAGE_KEY_THEMES = 'themes-switcher-66';
+export const LOCAL_STORAGE_KEY_THEMES = 'themes-switcher-111';

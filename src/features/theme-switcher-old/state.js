@@ -1,11 +1,15 @@
-/** @typedef {import('./types').ThemeState} ThemeState */
+/**
+ * @typedef {Object} ThemeState
+ * @property {'default' | 'dark' | 'light' | 'gold' | null} activeTheme
+ * @property {boolean} [isFirstLoad]
+ */
 
 import { getThemeState, setThemeState } from './storage';
 
 function initThemeState() {
   /** @type {ThemeState} Theme State */
   const initialState = {
-    activeTheme: 'daft',
+    activeTheme: 'default',
     isFirstLoad: true,
   };
 

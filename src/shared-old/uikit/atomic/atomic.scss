@@ -30,71 +30,19 @@
 }
 
 .w-full {
-  width: 400px;
-}
-
-.w-xl4 {
-  width: 380px;
-}
-
-.w-xl3 {
-  width: 360px;
-}
-
-.w-xl2 {
-  width: 340px;
-}
-
-.w-xl {
-  width: 320px;
-}
-
-.w-lg {
-  width: 300px;
-}
-
-.w-md {
-  width: 280px;
+  width: 100%;
 }
 
 .h-full {
   height: 100%;
 }
 
-.rounded {
-  border-radius: 4px;
-}
-
-.rounded-full {
-  border-radius: 9999px;
-}
-
-.border {
-  border: 1px solid #ccc;
-}
-
 .hidden {
   display: none;
 }
 
-.select-none {
-  user-select: none;
-}
-
 .overflow-hidden {
   overflow: hidden;
-}
-
-.pointer {
-  cursor: pointer;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-left {
-  text-align: start;
 }
 
 @for $i from 0 to 20 {
