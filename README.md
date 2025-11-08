@@ -17,7 +17,7 @@ The `shared` layer inludes (`uikit`, `utils`, `storage`):
 - Reusable mixins and helper utilities [**core**]
 - Atomic styles (Tailwind-like) [**atomic**]
 - LocalStorage API for state persistence [**storage**]
-- General helpers and constants [**utils**]
+- General helpers, constants, DOM manipulation and Events handling [**utils**]
 
 ### 📦 Start
 
@@ -32,4 +32,4 @@ pnpm prev # port:5555
 > This template uses environment variables.
 > Don't forget to remove the `.example` part from the provided `.env` files.
 
-**Version:** 0.5.0 - stable first draft
+**Version:** 0.9.0 - second iteration
